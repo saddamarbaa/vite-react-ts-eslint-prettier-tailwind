@@ -4,7 +4,9 @@
     "paths": {
       "components/*": ["./components/*"],
       "styles/*": ["./styles/*"],
-      "utils/*": ["./utils/*"]
+      "utils/*": ["./utils/*"],
+      "layouts/*": ["./layouts/*"],
+      "screens/*": ["./screens/*"]
     },
     "target": "ESNext",
     "useDefineForClassFields": true,
