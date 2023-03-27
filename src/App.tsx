@@ -1,7 +1,15 @@
+import Button from 'components/Button';
+import { test } from 'utils/test';
+
+console.log(test);
+
 export default function App() {
-	return (
-		<div className="text-xl font-bold flex items-center justify-center w-full h-screen">
-			<div>React + Vite App</div>
-		</div>
-	)
+  return (
+    <div className='flex h-screen w-full items-center justify-center text-xl font-bold'>
+      <div className='flex w-full max-w-md flex-col space-x-5 text-center'>
+        <div>React + Vite App</div>
+        <Button> Testing absolute import</Button>
+      </div>
+    </div>
+  );
 }
