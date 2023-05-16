@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Layout from 'layouts/indes';
-import HomeScreen from 'screens/HomeScreen';
-import NotFoundScreen from 'screens/NotFoundScreen';
-import SignInScreen from 'screens/SignInScreen';
-import SignUpScreen from 'screens/SignUpScreen';
+import Layout from '~layouts/indes';
+import HomeScreen from '~screens/HomeScreen';
+import NotFoundScreen from '~screens/NotFoundScreen';
+import SignInScreen from '~screens/SignInScreen';
+import SignUpScreen from '~screens/SignUpScreen';
 
 function App() {
   return (

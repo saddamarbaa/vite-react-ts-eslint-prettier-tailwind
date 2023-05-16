@@ -1,33 +1,58 @@
 {
-  "compilerOptions": {
-    "baseUrl": "./src",
-    "paths": {
-      "components/*": ["./components/*"],
-      "styles/*": ["./styles/*"],
-      "utils/*": ["./utils/*"],
-      "layouts/*": ["./layouts/*"],
-      "screens/*": ["./screens/*"]
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "~assets/*": [
+                "src/assets/*"
+            ],
+            "~components/*": [
+                "src/components/*"
+            ],
+            "~layouts/*": [
+                "src/layouts/*"
+            ],
+            "~screens/*": [
+                "src/screens/*"
+            ],
+            "~styles/*": [
+                "src/styles/*"
+            ],
+            "~utils/*": [
+                "src/utils/*"
+            ],
+            "~/*": [
+                "src/*"
+            ]
+        },
+        "target": "ESNext",
+        "useDefineForClassFields": true,
+        "lib": [
+            "DOM",
+            "DOM.Iterable",
+            "ESNext"
+        ],
+        "allowJs": false,
+        "skipLibCheck": true,
+        "esModuleInterop": false,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "react-jsx"
     },
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "allowJs": false,
-    "skipLibCheck": true,
-    "esModuleInterop": false,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
-  },
-  "include": ["vite.config.ts", ".eslintrc.json", "src", ".husky.config.js"],
-  "references": [
-    {
-      "path": "./tsconfig.node.json"
-    }
-  ]
+    "include": [
+        "vite.config.ts",
+        ".eslintrc.json",
+        "src",
+        ".husky.config.js"
+    ],
+    "references": [
+        {
+            "path": "./tsconfig.node.json"
+        }
+    ]
 }
